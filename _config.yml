@@ -1,0 +1,6 @@
+name: foo name
+title: foo title
+description: foo description
+remote_theme: just-the-docs/just-the-docs
+
+footer_content: "footer_content <a href=\"#\">footer_content</a>"
