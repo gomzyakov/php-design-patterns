@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Паттерны проектирования на PHP
+title: Главная
 nav_order: 1
 description: "index.md description"
 permalink: /
@@ -17,10 +17,8 @@ A topic that can easily make anyone's mind wobble. Here I try to make them stick
 
 ***
 
-<sub>Check out my [blog](http://kamranahmed.info) and say "hi" on [Twitter](https://twitter.com/kamranahmedse).</sub>
 
-Introduction
-=================
+# Введение
 
 Design patterns are solutions to recurring problems; **guidelines on how to tackle certain problems**. They are not classes, packages or libraries that you can plug into your application and wait for the magic to happen. These are, rather, guidelines on how to tackle certain problems in certain situations.
 

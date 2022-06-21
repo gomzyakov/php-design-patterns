@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Creational Design Patterns
-nav_order: 11
+nav_order: 20
 has_children: true
 ---
 

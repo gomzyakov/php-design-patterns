@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Bar 1
-parent: Bar item
+parent: Structural Design Patterns
 nav_order: 1
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Top 1
-nav_order: 6
+nav_order: 50
 ---
 
 # Top 1

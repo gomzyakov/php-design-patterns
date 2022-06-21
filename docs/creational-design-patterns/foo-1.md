@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Foo 1
-parent: Foo item
+parent: Creational Design Patterns
 nav_order: 1
 ---
 

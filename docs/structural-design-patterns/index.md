@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Structural Design Patterns
-nav_order: 12
+nav_order: 30
 has_children: true
 ---
 

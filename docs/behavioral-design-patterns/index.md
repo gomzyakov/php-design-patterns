@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Behavioral Design Patterns
-nav_order: 12
+nav_order: 40
 has_children: true
 ---
 
