@@ -1,12 +1,13 @@
 ---
 layout: default
-title: Главная
+title: Введение
 nav_order: 1
 description: "index.md description"
 permalink: /
 ---
 
-***
+# Введение в паттерны проектирования на PHP
+
 
 <p align="center">
 🎉 Ultra-simplified explanation to design patterns! 🎉
@@ -17,8 +18,6 @@ A topic that can easily make anyone's mind wobble. Here I try to make them stick
 
 ***
 
-
-# Введение
 
 Design patterns are solutions to recurring problems; **guidelines on how to tackle certain problems**. They are not classes, packages or libraries that you can plug into your application and wait for the magic to happen. These are, rather, guidelines on how to tackle certain problems in certain situations.
 
