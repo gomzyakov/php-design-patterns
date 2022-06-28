@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Top 1
+title: Что ещё стоит знать?
 nav_order: 50
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Bar 2
-parent: Structural Design Patterns
+parent: Структурные шаблоны
 nav_order: 2
 ---
 
