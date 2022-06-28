@@ -1,6 +1,6 @@
 name: foo name
-title: Паттерны проектирования на PHP
-description: foo description
+title: Паттерны проектирования PHP (очень простыми словами)
+description: Простыми словами рассказываем о паттернах проектирования с примерами на PHP
 remote_theme: just-the-docs/just-the-docs
 
 footer_content: "footer_content <a href=\"#\">footer_content</a>"
