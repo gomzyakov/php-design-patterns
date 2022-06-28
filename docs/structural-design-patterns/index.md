@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Structural Design Patterns
+title: Структурные шаблоны
 nav_order: 30
 has_children: true
 ---
 
-# Structural Design Patterns
+# Структурные шаблоны
 
 In plain words
 > Structural patterns are mostly concerned with object composition or in other words how the entities can use each other. Or yet another explanation would be, they help in answering "How to build a software component?"

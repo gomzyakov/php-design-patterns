@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Behavioral Design Patterns
+title: Поведенческие шаблоны
 nav_order: 40
 has_children: true
 ---
 
-Behavioral Design Patterns
-==========================
+Поведенческие шаблоны
+=====================
 
 In plain words
 > It is concerned with assignment of responsibilities between the objects. What makes them different from structural patterns is they don't just specify the structure but also outline the patterns for message passing/communication between them. Or in other words, they assist in answering "How to run a behavior in software component?"

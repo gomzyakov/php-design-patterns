@@ -4,7 +4,7 @@ title: Top 1
 nav_order: 50
 ---
 
-# Top 1
+# Что ещё стоит знать?
 {: .no_toc}
 
 Some text
