@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Creational Design Patterns
+title: Порождающие шаблоны
 nav_order: 20
 has_children: true
 ---
 
-# Creational Design Patterns
+# Порождающие шаблоны
 
 In plain words
 > Creational patterns are focused towards how to instantiate an object or group of related objects.

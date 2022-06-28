@@ -8,13 +8,10 @@ permalink: /
 
 # Введение в паттерны проектирования на PHP
 
+Ultra-simplified explanation to design patterns!
 
-<p align="center">
-🎉 Ultra-simplified explanation to design patterns! 🎉
-</p>
-<p align="center">
 A topic that can easily make anyone's mind wobble. Here I try to make them stick in to your mind (and maybe mine) by explaining them in the <i>simplest</i> way possible.
-</p>
+
 
 ***
 

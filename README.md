@@ -1,6 +1,4 @@
-# php-design-patterns-for-humans
+# Паттерны проектирования с примерами на PHP
 
-php-design-patterns-for-humans
+https://gomzyakov.github.io/php-design-patterns
 
-Первоисточник на английском: 
-https://github.com/kamranahmedse/design-patterns-for-humans
