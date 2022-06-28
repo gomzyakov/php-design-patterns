@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Foo 2
-parent: Creational Design Patterns
+parent: Порождающие шаблоны
 nav_order: 2
 ---
 
