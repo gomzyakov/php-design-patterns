@@ -7,6 +7,8 @@ has_children: true
 
 # Порождающие шаблоны
 
+В объектно-ориентированном программировании (ООП), фабрика - это объект, создающий другие объекты.
+
 In plain words
 > Creational patterns are focused towards how to instantiate an object or group of related objects.
 

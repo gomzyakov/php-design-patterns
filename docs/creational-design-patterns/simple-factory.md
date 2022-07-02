@@ -5,88 +5,60 @@ parent: Порождающие шаблоны
 nav_order: 1
 ---
 
-# Простая фабрика
+# Простая фабрика _(англ. simple factory)_
 
-Простая фабрика _(англ. simple factory)_
-
-In plain words
-> Simple factory simply generates an instance for client without exposing any instantiation logic to the client
-
-
-
-
-Простыми словами
-> Простая фабрика просто создает экземпляр для клиента не предоставляя клиенту какой либо логики создания.
-
-[Википедия](https://en.wikipedia.org/wiki/Factory_(object-oriented_programming))
-> В объектно-ориентированном программировании (ООП), фабрика - это объект, создающий другие объекты. 
-> Формально фабрика это функция или метод, вызов которой возвращает объекты различных классов или прототипов, которые можно считать "новыми".
-
-**Пример кода**
-
-Прежде всего у нас есть интерфейс door и его имплементация
-```php
-interface Door
-{
-    public function getWidth(): float;
-    public function getHeight(): float;
-}
-
-class WoodenDoor implements Door
-{
-    protected $width;
-    protected $height;
-
-    public function __construct(float $width, float $height)
-    {
-        $this->width = $width;
-        $this->height = $height;
-    }
-
-    public function getWidth(): float
-    {
-        return $this->width;
-    }
-
-    public function getHeight(): float
-    {
-        return $this->height;
-    }
-}
-```
-
-Затем фабрика DoorFactory создает двери и возвращает их.
-
-```php
-class DoorFactory
-{
-    public static function makeDoor($width, $height): Door
-    {
-        return new WoodenDoor($width, $height);
-    }
-}
-```
-
-И затем, мы это можем использовать так
-
-```php
-$door = DoorFactory::makeDoor(100, 200);
-echo 'Width: ' . $door->getWidth();
-echo 'Height: ' . $door->getHeight();
-```
+Это функция или метод, вызов которой просто создает некоторый объект, не предоставляя какой либо логики создания.
 
 ## Когда использовать?
 
-Если создание объекта не ограничевается парой присвоений и требует вовлечения определенной логики, 
-имеет смысл вынести ее в отдельную фабрику вместо постоянного повторения одного и того же кода.
+Если создание объекта не ограничевается парой присвоений и требует вовлечения определенной логики,
+имеет смысл вынести эту логику в отдельную фабрику вместо постоянного повторения одного и того же кода.
 
+## Простой пример
 
-🏠 Simple Factory
---------------
+У нас есть класс `Door`:
 
-**Programmatic Example**
+```php
+class Door
+{
+    public $width;
+    public $height;
 
-First of all we have a door interface and the implementation
+    public function __construct(float $width, float $height)
+    {
+        $this->width = $width;
+        $this->height = $height;
+    }
+}
+```
+
+Тогда простая фабрика `DoorFactory` будет создает двери и возвращать их:
+
+```php
+class DoorFactory
+{
+    public static function makeDoor($width, $height): Door
+    {
+        return new Door($width, $height);
+    }
+}
+```
+
+Создание дверей через фабрику будет выглядеть следующим образом:
+
+```php
+$door = DoorFactory::makeDoor(100, 200);
+echo 'Width:  ' . $door->getWidth();
+echo 'Height: ' . $door->getHeight();
+```
+
+## Пример через интерфейс
+
+В простом примере не очень хорошо просматривается зачем вообще нужна простая фабрика, когда
+можно зайти через `new Door`.
+
+Немного расширим пример. Доспустим у нас есть интерфейс `Door` и класс деревянной двери `WoodenDoor`:
+
 ```php
 interface Door
 {
@@ -116,7 +88,9 @@ class WoodenDoor implements Door
     }
 }
 ```
-Then we have our door factory that makes the door and returns it
+
+Тогда простая фабрика `DoorFactory` будет создает двери и возвращать их:
+
 ```php
 class DoorFactory
 {
@@ -126,18 +100,17 @@ class DoorFactory
     }
 }
 ```
-And then it can be used as
+
+Так будет выглядеть создание дверей:
+
 ```php
 // Make me a door of 100x200
 $door = DoorFactory::makeDoor(100, 200);
 
-echo 'Width: ' . $door->getWidth();
+echo 'Width:  ' . $door->getWidth();
 echo 'Height: ' . $door->getHeight();
 
 // Make me a door of 50x100
-$door2 = DoorFactory::makeDoor(50, 100);
+$door_2 = DoorFactory::makeDoor(50, 100);
 ```
 
-**When to Use?**
-
-When creating an object is not just a few assignments and involves some logic, it makes sense to put it in a dedicated factory instead of repeating the same code everywhere.
