@@ -104,13 +104,13 @@ class DoorFactory
 Так будет выглядеть создание дверей:
 
 ```php
-// Make me a door of 100x200
+// Создаст дверь размерами 100x200
 $door = DoorFactory::makeDoor(100, 200);
 
 echo 'Width:  ' . $door->getWidth();
 echo 'Height: ' . $door->getHeight();
 
-// Make me a door of 50x100
-$door_2 = DoorFactory::makeDoor(50, 100);
+// Создаст дверь размерами 50x100
+$small_door = DoorFactory::makeDoor(50, 100);
 ```
 
